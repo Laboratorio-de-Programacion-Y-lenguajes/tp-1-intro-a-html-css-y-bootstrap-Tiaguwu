@@ -34,19 +34,27 @@ a {
     transition: all 0.3s ease;
 }
 
+.display-4 {
+    color: #c8aa6e;
+}
+.lead {
+    color: #c8aa6e;
+}
+
 /* ===== Navbar ===== */
 .navbar {
-    box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+    border-bottom: 2px solid #c8aa6e;
 }
 
-.navbar-brand {
-    font-size: 1.5rem;
-    letter-spacing: 0.5px;
+.nav-link img {
+    transition: filter 0.3s ease, transform 0.3s ease;
 }
 
-.navbar-brand:hover {
-    opacity: 0.8;
+.nav-link:hover img {
+    filter: drop-shadow(0 0 8px #c8aa6e);
+    transform: scale(1.1);
 }
+
 
 /* ===== Hero Section ===== */
 .bg-gradient {
@@ -55,20 +63,43 @@ a {
 
 /* ===== Cards ===== */
 .card {
-    border: none;
-    border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    overflow: hidden;
+    background-color: #1a1a1a; 
+    color: #f0e6d2; 
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgb(0 0 0 / 15%) !important;
+    transform: translateY(-10px); 
+    box-shadow: 0 10px 20px rgba(200, 170, 110, 0.3); 
+}
+
+.card-title {
+    color: #c8aa6e; 
+    letter-spacing: 2px;
+}
+
+.card-subtitle{
+    color: #c8aa6e; 
+    letter-spacing: 2px;
 }
 
 .card-img-top {
     height: 200px;
     object-fit: cover;
     border-radius: 8px 8px 0 0;
+}
+
+.carousel {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    padding: 10px;
 }
 
 /* ===== Botones ===== */
@@ -144,6 +175,15 @@ footer a {
     color: #adb5bd;
 }
 
+.footer-logo {
+    transition: transform 0.3s ease;
+    border-radius: 50%;
+}
+
+.footer-logo:hover {
+    transform: rotate(360deg);
+}
+
 /* ===== Accesibilidad ===== */
 a:focus,
 button:focus,
@@ -190,3 +230,4 @@ footer a:hover {
 .skip-link:focus {
     top: 0;
 }
+
