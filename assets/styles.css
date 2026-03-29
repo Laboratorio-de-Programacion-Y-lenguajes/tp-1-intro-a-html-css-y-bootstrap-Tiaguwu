@@ -37,6 +37,7 @@ a {
 .display-4 {
     color: #c8aa6e;
 }
+
 .lead {
     color: #c8aa6e;
 }
@@ -55,7 +56,6 @@ a {
     transform: scale(1.1);
 }
 
-
 /* ===== Hero Section ===== */
 .bg-gradient {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -72,7 +72,7 @@ a {
 
 .card:hover {
     transform: translateY(-10px); 
-    box-shadow: 0 10px 20px rgba(200, 170, 110, 0.3); 
+    box-shadow: 0 10px 20px rgb(200 170 110 / 30%); 
 }
 
 .card-title {
@@ -92,12 +92,12 @@ a {
 }
 
 .carousel {
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 15px rgb(0 0 0 / 50%);
 }
 
 
 .carousel-caption {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgb(0 0 0 / 70%);
     border-radius: 5px;
     padding: 10px;
 }
@@ -230,4 +230,3 @@ footer a:hover {
 .skip-link:focus {
     top: 0;
 }
-
