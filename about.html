@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -6,40 +6,170 @@
     <title>Acerca de mí - Mi Blog</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles.css">
+    <link rel="icon" type="image/x-icon" href="/assets/images/navicon/rigby.jpg">
 </head>
+
 <body>
-    <!-- Navbar (copiar de index.html) -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">Mi Blog</a>
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top custom-nav">
+        <div class="container-fluid">
+            <img src="assets/images/navicon/rigby.jpg" alt="Rigby" width="50">
+            <a class="navbar-brand fw-bold ms-4" href="index.html">Mi Blog</a>  
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-label="Abrir menú de navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav gap-3"> 
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold active" href="about.html">Sobre Mí</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="nav-link fw-bold active">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <!-- Contenido -->
     <main class="py-5">
         <div class="container">
             <div class="row">
-                <!-- Sidebar: Avatar (COMPLETAR) -->
-                <aside class="col-md-3 mb-4">
-                    <img src="assets/images/avatar.jpg" class="img-fluid rounded-circle mb-3" alt="Avatar" style="max-width: 200px;">
-                    <h3>Tu Nombre</h3>
-                    <p class="text-muted">Desarrollador web &amp; escritor</p>
+                <aside class="col-md-3 mb-3">
+                    <img src="assets/images/icon/gojo.jpg" class="img-fluid rounded-circle mb-3" alt="Avatar" style="max-width: 200px;">
+                    <h3>Tiago Caranchi</h3>
+                    <p class="text-muted">Dev Wannabe</p>
                 </aside>
 
-                <!-- Contenido principal (COMPLETAR) -->
                 <article class="col-md-9">
                     <h1>Acerca de mí</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-                    <!-- TODO: agregar más párrafos, habilidades, etc. -->
+                    <p>Mi viaje en el mundo académico no fue una línea recta, sino una búsqueda de mi verdadera pasión. Comencé estudiando Ingeniería Industrial, impulsado por mi fascinación por las matemáticas y la resolución de problemas lógicos. Sin embargo, con el tiempo descubrí que el enfoque de esa carrera no conectaba con lo que realmente me entusiasmaba.</p>
+                    <p>Decidí seguir mi instinto y cambiarme a la Licenciatura en Sistemas en la UNTDF. Siempre he sentido una conexión especial con las computadoras; para mí, programar es el punto exacto donde la matemática pura se vuelve tangible y funcional.</p>
+                    <p>Pero mi curiosidad no termina en la tierra. En un futuro, tengo el firme propósito de estudiar Astronomía. Mi sueño es fusionar el desarrollo de software con la exploración del cosmos, aplicando la computación para entender los misterios del universo.</p>                
                 </article>
             </div>
+
+            <section id="tecnologias" class="my-5">
+                <h2>Tecnologías Aprendidas</h2>
+                <div class="card mb-3 shadow-sm border-0 card-tech-blur">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-4 col-md-2 p-3 text-center">
+                            <img src="assets/images/icon/java.png" alt="Logotipo de Java" class="img-fluid tech-logo">
+                        </div>
+                        <div class="col-8 col-md-10">
+                            <div class="card-body">
+                                <h3 class="card-title h5 fw-bold mt-1">Java</h3>
+                                <p class="card-text">Lenguaje robusto que utilizo para dominar la Programación Orientada a Objetos y la lógica de sistemas complejos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 shadow-sm border-0 card-tech-blur">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-4 col-md-2 p-3 text-center">
+                            <img src="assets/images/icon/postgres.png" alt="Logotipo de Postgre" class="img-fluid tech-logo">
+                        </div>
+                        <div class="col-8 col-md-10">
+                            <div class="card-body">
+                                <h3 class="card-title h5 fw-bold mt-1">PostgreSQL</h3>
+                                <p class="card-text">Gestión de bases de datos relacionales para garantizar la persistencia y seguridad de la información.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 shadow-sm border-0 card-tech-blur">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-4 col-md-2 p-3 text-center">
+                            <img src="assets/images/icon/plantuml.png" alt="Logotipo de Plant" class="img-fluid tech-logo">
+                        </div>
+                        <div class="col-8 col-md-10">
+                            <div class="card-body">
+                                <h3 class="card-title h5 fw-bold mt-1">PlantUML</h3>
+                                <p class="card-text">Herramienta fundamental para el modelado de sistemas y la visualización de arquitecturas de software.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 shadow-sm border-0 card-tech-blur">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-4 col-md-2 p-3 text-center">
+                            <img src="assets/images/icon/markdown.png" alt="Logotipo de Markdown" class="img-fluid tech-logo">
+                        </div>
+                        <div class="col-8 col-md-10">
+                            <div class="card-body">
+                                <h3 class="card-title h5 fw-bold mt-1">Markdown</h3>
+                                <p class="card-text">Lenguaje ligero utilizado para crear documentación técnica clara y profesional.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>Tecnologías que estoy aprendiendo</h2>
+
+                <div class="card mb-3 shadow-sm border-0 card-tech-blur">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-4 col-md-2 p-3 text-center">
+                            <img src="assets/images/icon/github.png" alt="Logotipo de Git" class="img-fluid tech-logo">
+                        </div>
+                        <div class="col-8 col-md-10">
+                            <div class="card-body">
+                                <h3 class="card-title h5 fw-bold mt-1">Git</h3>
+                                <p class="card-text">Sistema de control de versiones que utilizo para gestionar mi código de forma profesional, permitiéndome mantener un historial de cambios significativo y organizado.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 shadow-sm border-0 card-tech-blur">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-4 col-md-2 p-3 text-center">
+                            <img src="assets/images/icon/html.png" alt="Logotipo de HTML" class="img-fluid tech-logo">
+                        </div>
+                        <div class="col-8 col-md-10">
+                            <div class="card-body">
+                                <h3 class="card-title h5 fw-bold mt-1">HTML5</h3>
+                                <p class="card-text">El lenguaje de marcado que utilizo para dar una estructura semántica y accesible a mis proyectos web, asegurando que el contenido sea claro para todos los usuarios.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3 shadow-sm border-0 card-tech-blur">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-4 col-md-2 p-3 text-center">
+                            <img src="assets/images/icon/css.png" alt="Logotipo de Css" class="img-fluid tech-logo">
+                        </div>
+                        <div class="col-8 col-md-10">
+                            <div class="card-body">
+                                <h3 class="card-title h5 fw-bold mt-1">CSS3</h3>
+                                <p class="card-text">Herramienta con la que defino el estilo y branding personalizado de mis sitios, aplicando diseño responsivo y transiciones suaves para mejorar la experiencia visual.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
         </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-4 mt-5">
+    <footer class="text-white py-4 mt-5 custom-nav custom-nav">
         <div class="container text-center">
-            <p>&copy; 2026 Mi Blog.</p>
+            <div class="row justify-content-center align-items-center">
+            <p class="mb-3">&copy; 2026 Tiago Caranchi - Estudiante UNTDF</p>
+            <div class="d-flex justify-content-center gap-4"> 
+                <a href="https://www.instagram.com/tiaguwu/" target="_blank">
+                    <img src="assets/images/icon/instagram.png" alt="Instagram" width="40" class="img-fluid footer-logo">
+                </a>
+                <a href="https://github.com/Tiaguwu" target="_blank">
+                    <img src="assets/images/icon/github.png" alt="GitHub" width="40" class="img-fluid footer-logo">
+                </a>
+                <a href="mailto:tiagocaranchi@hotmail.com">
+                    <img src="assets/images/icon/gmail.png" alt="Email" width="40" class="img-fluid footer-logo">
+                </a>
+            </div>
+            </div>
         </div>
     </footer>
 
