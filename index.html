@@ -6,36 +6,34 @@
     <title>Mi Blog Personal</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles.css">
+    <link rel="icon" type="image/x-icon" href="/assets/images/navicon/rigby.jpg">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top custom-nav">
         <div class="container-fluid">
-            <img src="/assets/images/navicon/rigby.jpg" alt="Rigby" width="50">
-            <a class="navbar-brand fw-bold ms-5" href="#inicio">Mi Blog</a>
+            <img src="assets/images/navicon/rigby.jpg" alt="Rigby" width="50">
+            <a class="navbar-brand fw-bold ms-4" href="index.html">Mi Blog</a>  
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-label="Abrir menú de navegación">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item ms-4">
-                        <a class="nav-link" href="#skins-jhin"> <img src="assets/images/icon/jhin-chibi.png" alt="Jhin Chibi" width="50"></a>
+                <ul class="navbar-nav gap-3"> 
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold active" href="about.html">Sobre Mí</a>
                     </li>
-                    <li class="nav-item ms-4">
-                        <a class="nav-link" href="#skins-kaisa"><img src="assets/images/icon/kaisa-chibi.jpg" alt="Kaisa Chibi" width="50"></a>
-                    </li>
-                    <li class="nav-item ms-3">
-                        <a class="nav-link" href="#skins-vayne"><img src="assets/images/icon/vayne-chibi.jpg" alt="Vayne Chibi" width="50"></a>
+                    <li>
+                        <a href="contact.html" class="nav-link fw-bold active">Contacto</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <header class="bg-dark text-white py-5">
+    <header class="bg-dark text-white py-5 custom-nav" id="inicio">
 
         <div class="container text-center" >
-            <h1 class="display-4" id="inicio">Bienvenido a Mi Blog</h1>
+            <h1 class="display-4">Bienvenido a Mi Blog</h1>
             <p class="lead">Mis personajes favoritos de lol</p>
         </div>
 
@@ -381,7 +379,7 @@
     </section>
     </main>
 
-    <footer class="bg-dark text-white py-4 mt-5">
+    <footer class="text-white py-4 mt-5 custom-nav">
         <div class="container text-center">
             <p>&copy; 2026 Mi Blog. Todos los derechos reservados.</p>
             <div class="row justify-content-center align-items-center">
