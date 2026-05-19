@@ -1,134 +1,35 @@
-# Mi Blog Personal - TP Semana 1
+# 🎮 Hub de Desarrollo & Blog Personal - Tiago Caranchi
 
-Página web de blog personal usando **HTML5**, **CSS3** y **Bootstrap 5**.
+Este repositorio contiene una plataforma web estática desarrollada para la **UNTDF**, centrada en la integración de diseño responsivo y estándares de accesibilidad moderna.
 
-## 📋 Requisitos
+## 🕹️ Guía de Ejecución
 
-- Navegador moderno (Chrome, Firefox, Safari, Edge)
-- Editor de código (VS Code recomendado)
-- Git
+El proyecto está construido sobre una arquitectura *serverless* y estática, por lo que su despliegue es inmediato.
 
-## 🚀 Cómo abrir el proyecto
+* **Despliegue Local Rápido**
+    * Descargar el código fuente en un directorio local.
+    * Ejecutar el archivo `index.html` en cualquier navegador moderno.
+* **Entorno de Desarrollo Federado**
+    * Abrir el espacio de trabajo en **VS Code**.
+    * Se recomienda el uso de la extensión **Live Server** para previsualizar cambios en tiempo real mediante el servidor local.
 
-1. **Clonar el repositorio**:
-   ```bash
-   git clone <URL_del_repositorio>
-   cd blog-personal
-   ```
+## 📂 Organización del Directorio
 
-2. **Abrir en navegador**:
-   - **Opción 1**: Doble-click en `index.html`
-   - **Opción 2**: Usar Live Server en VS Code (extensión)
-   - **Opción 3**: Python server:
-     ```bash
-     python -m http.server 8000
-     # Luego accede a http://localhost:8000
-     ```
+* **`index.html`**: Punto de entrada al blog. Presenta el ecosistema de campeones (Jhin, Kai'Sa, Vayne) y galerías dinámicas.
+* **`about.html`**: Perfil profesional y hoja de ruta académica (Ingeniería a Sistemas/Astronomía). Contiene el desglose de *stack* tecnológico.
+* **`contact.html`**: Interfaz de comunicación con protocolos de validación de datos en tiempo real.
+* **`assets/`**:
+    * **`styles.css`**: Motor de estilos personalizado con arquitectura de variables y efectos de profundidad.
+    * **`images/`**: Repositorio de recursos multimedia, branding y activos visuales.
 
-## 📁 Estructura del proyecto
+## ⚙️ Especificaciones Técnicas y Stack
 
-```
-blog-personal/
-├── index.html          # Página principal (listado de artículos)
-├── about.html          # Página "Acerca de mí"
-├── contact.html        # Formulario de contacto
-├── assets/
-│   ├── styles.css      # Estilos personalizados
-│   └── images/         # Carpeta para imágenes (favicon, avatar, etc.)
-├── .github/
-│   └── workflows/
-│       └── validate.yml # Tests automatizados en GitHub Actions
-├── .gitignore
-└── README.md           # Este archivo
-
-```
-
-## ✅ Criterios de aceptación
-
-- **HTML válido**: Sin errores W3C. Verifica en https://validator.w3.org/
-- **Todas las páginas funcionan**: Links internos sin 404
-- **Formulario funcional**: 
-  - Campos: nombre, email, teléfono (opcional), mensaje
-  - Validación HTML5 (`required`, `type="email"`, etc.)
-  - Feedback visual (:valid, :invalid estilos)
-- **Navbar responsiva**: Funciona en mobile y desktop
-- **Bootstrap bien usado**: Sin DIVs innecesarios que Bootstrap ya resuelve
-- **CSS limpio**: Sin duplicación, nombres claros
-- **Git**: ≥5 commits con mensajes significativos
-- **README**: Instrucciones claras (este archivo)
-
-## 🎨 Customización
-
-### Cambiar colores
-Edita las variables en `assets/styles.css`:
-
-```css
-:root {
-    --primary-color: #0d6efd;  /* Cambiar aquí */
-    --text-color: #212529;
-    --light-bg: #f8f9fa;
-}
-```
-
-### Agregar artículos
-En `index.html`, copia la tarjeta (`.card`) y modifica:
-- Imagen: `src="assets/images/article-X.jpg"`
-- Título, autor, descripción
-
-### Cambiar tipografía
-En `assets/styles.css`, modifica:
-```css
-body {
-    font-family: 'Tu fuente aquí', sans-serif;
-}
-```
-
-## 🧪 Validación
-
-### Validar HTML localmente
-Usa el validator de W3C: https://validator.w3.org/
-
-### Validar CSS
-Usa el CSS Validator: https://jigsaw.w3.org/css-validator/
-
-### GitHub Actions
-Cada vez que hagas `git push`, se ejecutan tests automáticos. Verifica el estado en la pestaña "Actions" de tu repositorio.
-
-## 💡 Pistas útiles
-
-### 1. **Navbar responsiva**
-Bootstrap proporciona `.navbar-collapse` y `.navbar-toggler`. Úsalos para que el menú se oculte en mobile.
-
-### 2. **Grid responsivo**
-Para 3 columnas en desktop, 1 en mobile:
-```html
-<div class="col-12 col-md-4">...</div>
-```
-
-### 3. **Formulario accesible**
-Cada `<input>` debe tener un `<label>` asociado con `for` y `id`.
-
-### 4. **CSS sobre Bootstrap**
-Tu `assets/styles.css` se importa DESPUÉS de Bootstrap, así que tus estilos lo sobrescriben. Usa clases personalizadas (BEM) para no romper componentes Bootstrap.
-
-## 📚 Recursos
-
-- [Bootstrap 5 Docs](https://getbootstrap.com/docs/5.0/)
-- [MDN: HTML](https://developer.mozilla.org/es/docs/Web/HTML)
-- [MDN: CSS](https://developer.mozilla.org/es/docs/Web/CSS)
-- [W3C HTML Validator](https://validator.w3.org/)
-
-## 🐛 Problemas comunes
-
-| Problema | Solución |
-|----------|----------|
-| Navbar no responde | Verifica que hayas importado Bootstrap JS al final de `</body>` |
-| Estilos CSS no aparecen | Limpia cache (Ctrl+Shift+R) o abre en navegación privada |
-| Formulario no valida | Asegúrate de usar atributos `required`, `type="email"`, etc. |
-| Bootstrap no carga (CDN) | Verifica conexión a internet o descarga Bootstrap localmente |
-
----
-
-**Autor**: [Tu nombre]  
-**Fecha**: 2026-03-13  
-**Estado**: En desarrollo
+* **Maquetado Semántico (HTML5)**: Implementación de etiquetas estructurales (`<nav>`, `<main>`, `<aside>`) para optimizar el SEO y la lectura del DOM.
+* **Diseño Estético Avanzado (CSS3)**:
+    * **Gestión de Estados**: Control de flujo visual mediante variables `:root`.
+    * **Feedback de Usuario**: Lógica visual basada en pseudoclases `:valid` e `:invalid` para una interacción intuitiva en formularios.
+    * **Procesamiento Visual**: Uso de filtros de desenfoque gaussianos y transiciones de aceleración suave (`ease-in-out`).
+* **Framework de Estilos (Bootstrap 5)**: Utilizado como base para el sistema de rejilla flexible, componentes de navegación persistente (`sticky`) y visualizadores de imágenes.
+* **Estándares de Accesibilidad (A11y)**:
+    * Atributos ARIA para una navegación asistida inclusiva.
+    * Estructura de encabezados secuencial para una correcta indexación semántica.
